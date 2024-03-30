@@ -14,7 +14,7 @@ const generateCNPJ = (mask = true) => {
 
 		const remainder = sum % 11;
 
-        /* istanbul ignore next: random condition */
+		/* istanbul ignore next: random condition */
 		return sum % 11 < 2 ? 0 : 11 - remainder;
 	};
 
@@ -50,7 +50,7 @@ const generateCPF = (mask = true) => {
 
 		const remainder = sum % 11;
 
-        /* istanbul ignore next: random condition */
+		/* istanbul ignore next: random condition */
 		return remainder < 2 ? 0 : 11 - remainder;
 	};
 
@@ -101,7 +101,7 @@ const validateCPF = cpfNumber => {
 
 		const remainder = (sum * 10) % 11;
 
-        /* istanbul ignore next: random condition */
+		/* istanbul ignore next: random condition */
 		return remainder === 10 || remainder === 11 ? 0 : remainder;
 	};
 
@@ -133,7 +133,7 @@ const completeVerifyDigitCPF = (cpfNumber, mask = true) => {
 
 		const remainder = (sum * 10) % 11;
 
-        /* istanbul ignore next: random condition */
+		/* istanbul ignore next: random condition */
 		return remainder === 10 || remainder === 11 ? 0 : remainder;
 	};
 
@@ -151,8 +151,8 @@ const completeVerifyDigitCPF = (cpfNumber, mask = true) => {
 };
 
 module.exports = {
-    generateCNPJ,
-    generateCPF,
-    validateCPF,
-    completeVerifyDigitCPF
+	generateCNPJ,
+	generateCPF,
+	validateCPF,
+	completeVerifyDigitCPF
 };
