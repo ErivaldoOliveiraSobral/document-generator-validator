@@ -1,0 +1,25 @@
+{
+  "name": "document-generator-validator",
+  "version": "1.0.0",
+  "description": "Biblioteca contendo métodos para gerar e validar documentos",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:dev": "jest --watch"
+  },
+  "keywords": [
+    "document",
+    "documento",
+    "validate",
+    "validar"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "randexp": "^0.5.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0"
+  }
+}
